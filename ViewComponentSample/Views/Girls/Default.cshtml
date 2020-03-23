@@ -1,0 +1,15 @@
+﻿@model GirlListModel
+    <div class="card-columns">
+        @foreach (var item in Model.GirlList)
+        {
+            <div class="card">
+                <img class="card-img-top" src="@item.ProfileImage" alt="@item.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name.ToUpper()</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, id litora, amet lectus nihil rutrum bibendum. Nulla diam elementum possimus, wisi esse justo suspendisse risus vehicula</p>
+                </div>
+            </div>
+        }
+    </div>
+        
+        
